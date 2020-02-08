@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Antigua">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="380dp"
+            android:layout_height="203dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/antigua"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/InfoAntigua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/foto_del_volcan_de_agua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/infoAntigua2"
+            android:layout_width="84dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/he_aqui_la_bella_anitgua_guatemla"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InfoAntigua" />
+
+        <Button
+            android:id="@+id/Comentario1"
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="196dp"
+            android:text="@string/comentario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoAntigua2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/comentarioo"
+            android:layout_width="226dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="44dp"
+            android:hint="@string/comente_aqui"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scroll1"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="231dp"
+            android:layout_height="278dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toEndOf="@+id/infoAntigua2"
+            app:layout_constraintTop_toBottomOf="@+id/InfoAntigua"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/InfoAntigua3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/la_ciudad_de_santiago_de_los_caballeros_de_guatemala_cuyo_nombre_oficial_e_hist_rico_es_muy_noble_y_muy_leal_ciudad_de_santiago_de_los_caballeros_de_guatemala_y_popularmente_nombrada_en_la_actualidad_como_antigua_guatemala_es_cabecera_del_municipio_hom_nimo_y_del_departamento_de_sacatep_quez_guatemala_se_ubica_a_aproximadamente_25_kil_metros_al_oeste_de_la_capital_de_la_rep_blica_de_guatemala_y_a_una_altitud_de_1470_msnm_actualmente_la_ciudad_se_ubica_dentro_de_las_20_ciudades_m_s_importantes_de_guatemala_durante_la_poca_colonial_era_conocida_como_santiago_de_los_caballeros_de_guatemala_y_fue_la_capital_de_la_capitan_a_general_de_guatemala_entre_1541_y_1776_a_o_en_que_la_capital_fue_trasladada_a_la_ciudad_de_nueva_guatemala_de_la_asunci_n_despu_s_de_que_los_terremotos_de_santa_marta_arruinaran_la_ciudad_por_tercera_ocasi_n_en_el_mismo_siglo3_y_las_autoridades_civiles_utilizaran_eso_como_excusa_para_debilitar_a_las_autoridades_eclesi_sticas_siguiendo_las_recomendaciones_de_las_reformas_borb_nicas_emprendidas_por_la_corona_espa_ola_en_la_segunda_mitad_del_siglo_xviii_4_obligando_a_las_rdenes_regulares_a_trasladarse_de_sus_majestuosos_conventos_a_fr_giles_estructuras_temporales_en_la_nueva_ciudad_5_a_partir_del_traslado_la_ciudad_pas_a_llamarse_arruinada_guatemala_santiago_de_guatemala_antiguo_y_la_antigua_ciudad_fue_abandonada_por_todas_las_autoridades_reales_y_municipales_y_en_1784_por_las_dos_ltimas_parroquias_candelaria_y_nuestra_se_ora_de_los_remedios_qued_ndose_tambi_n_sin_autoridades_eclesi_sticas_6_pocos_a_os_despu_s_el_arzobispo_cayetano_francos_y_monroy_autoriz_el_funcionamiento_de_tres_parroquias_interinas_que_llevaron_el_nombre_de_sus_antecesoras_san_sebasti_n_candelaria_y_los_remedios_en_donde_se_guard_la_mayor_cantidad_de_obras_de_arte_religioso_que_permaneci_en_la_antigua_guatemala"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/InfoAntigua" />
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

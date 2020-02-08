@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/Tikal"
+            android:layout_width="347dp"
+            android:layout_height="193dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tikal"
+            android:contentDescription="@string/todo" />
+
+        <Button
+            android:id="@+id/Favorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/favorito"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Tikal" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/nombres"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Tikal" />
+
+    <EditText
+        android:id="@+id/infoNombre"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/escribe_aqui"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:labelFor="@id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/Tikal" />
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="340dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/tikal_es_una_antigua_ciudadela_maya_en_los_bosques_tropicales_del_norte_de_guatemala_se_cree_que_data_del_siglo_i_d_c_tikal_floreci_entre_los_a_os_200_y_850_d_c_y_luego_fue_abandonada_sus_ruinas_ic_nicas_de_templos_y_palacios_incluyen_la_gigante_pir_mide_ceremonial_mundo_perdido_y_el_templo_del_gran_jaguar_a_70_metros_el_templo_iv_es_la_estructura_precolombina_m_s_alta_de_am_rica_y_tiene_vista_panor_mica"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoNombre" />
+
+    <Button
+        android:id="@+id/Flores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/flores"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto1"
+        app:layout_constraintVertical_bias="0.596" />
 
+    <Button
+        android:id="@+id/Livingston"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/livingston"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Flores"
+        app:layout_constraintTop_toBottomOf="@+id/texto1"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <Button
+        android:id="@+id/antigua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/antigua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/Livingston"
+        app:layout_constraintTop_toBottomOf="@+id/texto1"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/posNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449"
+        tools:visibility="invisible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
